@@ -75,29 +75,28 @@ The backend server provides the following endpoints:
 Get a Random Quote
 
 arduino
-Copy code
+
 GET http://localhost:8080/
 This endpoint returns a random quote from the quotes dataset.
 
 Response Example:
 
 json
-Copy code
+
 {
   "text": "Be yourself; everyone else is already taken.",
   "author": "Oscar Wilde"
 }
 Search Quotes by Author
 
-bash
-Copy code
+
 GET http://localhost:8080/search?author=<author_name>
 This endpoint searches for quotes by the specified author. The author query parameter is required.
 
 Response Example:
 
 json
-Copy code
+
 [
   {
     "text": "Be yourself; everyone else is already taken.",
@@ -111,12 +110,12 @@ Copy code
 Error Response Example:
 
 json
-Copy code
+
 {
   "error": "Author query parameter is required"
 }
 json
-Copy code
+
 {
   "error": "No quotes found for the given author"
 }
@@ -126,7 +125,6 @@ If you encounter a Module not found: Error: Can't resolve 'axios' error, ensure 
 
 Install axios
 
-bash
-Copy code
+
 cd frontend/quote-of-the-day
 npm install axios
