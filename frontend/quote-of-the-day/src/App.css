@@ -1,0 +1,59 @@
+.App {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  /* justify-content: center; Center items vertically */
+  align-items: center; /* Center items horizontally */
+  height: 100vh; /* Make the container full height */
+  text-align: center;
+  padding: 20px;
+  background-image: url('back.jpg');
+  background-size: cover; /* Adjusts the size of the background image */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-attachment: fixed; /* Fixes the background image when scrolling */
+  background-attachment: fixed; /* Fixes the background image when scrolling */
+  overflow: auto;
+}
+.App h1{
+  margin-top: 100px;
+}
+.quote-box {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height:150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
